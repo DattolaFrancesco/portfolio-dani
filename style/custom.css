@@ -7074,33 +7074,6 @@
     display: none !important;
   }
 }
-.bg-body {
-  min-height: 100dvh;
-  background-image: url("..//img/TEXTURE.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-glass {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-nav .logo img {
-  height: clamp(40px, 5vw, 70px);
-}
-
-.bg-custom {
-  min-height: 100dvh;
-  background-image: url("..//img/Sfondo_Verticale-removebg-preview.png");
-  background-position: center;
-  background-size: 120% auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -21562,4 +21535,28 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.bg-body {
+  min-height: 100dvh;
+  background-image: url("..//img/TEXTURE.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+  height: clamp(40px, 5vw, 70px);
+}
+
+.bg-custom {
+  min-height: 100dvh;
+  background-image: url("../img/Sfondo_Verticale-removebg-preview.png");
+  background-position: center;
+  background-size: 120% auto;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=custom.css.map */
