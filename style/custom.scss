@@ -1,0 +1,85 @@
+@import "../scss/functions";
+
+// color
+
+@import "../scss/variables";
+
+//$new-theme-colors: (// new colors);
+//$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// resto
+$new-spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 4.5,
+  8: $spacer * 5,
+  9: $spacer * 5.5,
+  10: $spacer * 6,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+$h7-font-size: $font-size-base * 0.75;
+$h8-font-size: $font-size-base * 0.5;
+
+$new-font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+);
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+@import "../scss/maps";
+@import "../scss/mixins";
+@import "../scss/utilities";
+
+@import "./loop";
+
+@import "../scss/utilities/api";
+
+// mod
+
+// normal css
+// body
+.bg-body {
+  min-height: 100dvh;
+  background-image: url("..//img/TEXTURE.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+// nav bar
+
+.bg-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+// header nav bar logo
+nav .logo img {
+  height: clamp(40px, 5vw, 70px);
+}
+
+//  section hero
+
+.bg-custom {
+  min-height: 100dvh;
+  background-image: url("..//img/Sfondo_Verticale-removebg-preview.png");
+  background-position: center;
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@import "../scss/bootstrap.scss";

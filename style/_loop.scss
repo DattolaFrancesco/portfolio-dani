@@ -1,0 +1,33 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+$width-list: 5, 10, 18, 20, 30, 40, 50, 60, 70, 80, 90, 100;
+
+$custom-width: ();
+
+@each $width in $width-list {
+  $custom-width: map-merge($custom-width, (#{$width}: $width * 1%));
+}
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+          values: map-merge(map-get(map-get($utilities, "width"), "values"), $custom-width),
+        )
+      ),
+  )
+);
