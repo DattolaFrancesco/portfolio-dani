@@ -7095,7 +7095,7 @@ nav .logo img {
   min-height: 100vh;
   background-image: url("../img/Sfondo_Verticale-removebg-preview.png");
   background-position: center;
-  background-size: 120% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
