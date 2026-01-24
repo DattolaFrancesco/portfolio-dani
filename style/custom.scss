@@ -56,7 +56,6 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
   background-image: url("..//img/TEXTURE.png");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 // nav bar
 
@@ -79,7 +78,6 @@ nav .logo img {
   background-position: center;
   background-size: 120% auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @import "../scss/bootstrap.scss";

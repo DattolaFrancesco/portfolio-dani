@@ -7079,7 +7079,6 @@
   background-image: url("..//img/TEXTURE.png");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .bg-glass {
@@ -7098,7 +7097,6 @@ nav .logo img {
   background-position: center;
   background-size: 120% auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 /*!
