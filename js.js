@@ -28,35 +28,35 @@ const works = [work1, work2, work3, work4];
 let counter = 0;
 let pressed = false;
 const switchPhotoUp = () => {
-  if (!pressed) {
-    pressed = true;
-    counter++;
-    if (counter > 3) counter = 0;
-    const worksPhoto = document.querySelector("#worksPhoto");
-    worksPhoto.src = blurredScreen;
-    setTimeout(() => {
-      worksPhoto.src = works[counter];
-      pressed = false;
-    }, 500);
-  }
+  pressed = true;
+  counter++;
+  if (counter > 3) counter = 0;
+  const worksPhoto = document.querySelector("#worksPhoto");
+  worksPhoto.src = blurredScreen;
+  setTimeout(() => {
+    worksPhoto.src = works[counter];
+    pressed = false;
+  }, 500);
 };
 const switchPhotoDown = () => {
-  if (!pressed) {
-    pressed = true;
-    counter--;
-    if (counter < 0) counter = 3;
-    const worksPhoto = document.querySelector("#worksPhoto");
-    worksPhoto.src = blurredScreen;
-    setTimeout(() => {
-      worksPhoto.src = works[counter];
-      pressed = false;
-    }, 500);
-  }
+  pressed = true;
+  counter--;
+  if (counter < 0) counter = 3;
+  const worksPhoto = document.querySelector("#worksPhoto");
+  worksPhoto.src = blurredScreen;
+  setTimeout(() => {
+    worksPhoto.src = works[counter];
+    pressed = false;
+  }, 500);
 };
 
 btnUp.addEventListener("click", () => {
-  switchPhotoUp();
+  if (!pressed) {
+    switchPhotoUp();
+  }
 });
 btnDown.addEventListener("click", () => {
-  switchPhotoDown();
+  if (!pressed) {
+    switchPhotoDown();
+  }
 });

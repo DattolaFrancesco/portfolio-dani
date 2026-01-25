@@ -60,7 +60,10 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
   font-display: swap;
 }
 // body
-
+html,
+body {
+  touch-action: manipulation;
+}
 .bg-body {
   position: relative;
   min-height: 100%;
