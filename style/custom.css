@@ -21550,7 +21550,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   z-index: -10; /* Lo manda dietro a tutto */
   background-image: url("../img/TEXTURE.png");
   background-position: center;
