@@ -1,16 +1,7 @@
-const startMarquee = () => {
-  document.documentElement.classList.add("marquee-ready");
-};
+const marquee = document.querySelector(".marquee-track");
 
-if (document.fonts && document.fonts.ready) {
-  document.fonts.ready.then(() => {
-    requestAnimationFrame(() => {
-      setTimeout(startMarquee, 150);
-    });
-  });
-} else {
-  // fallback browser vecchi
-  window.addEventListener("load", () => {
-    setTimeout(startMarquee, 300);
-  });
-}
+document.fonts.ready.then(() => {
+  setTimeout(() => {
+    marquee.classList.add("marquee-ready");
+  }, 2000);
+});

@@ -134,6 +134,13 @@ nav .logo img {
   display: flex;
   width: max-content;
   animation: marquee 15s linear infinite;
+  animation-play-state: paused;
+
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+.marquee-ready {
+  animation-play-state: running;
 }
 
 .marquee-track h1 {
