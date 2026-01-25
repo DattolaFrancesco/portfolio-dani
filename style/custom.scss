@@ -165,6 +165,20 @@ nav .logo img {
   font-size: 5rem;
   color: rgb(232, 37, 41);
 }
+.custom-positionUp {
+  top: 56%;
+  left: 11.5%;
+  height: 7%;
+  width: 10.5%;
+  background-color: transparent;
+}
+.custom-positionDown {
+  top: 68%;
+  left: 11.5%;
+  height: 7%;
+  width: 10.5%;
+  background-color: transparent;
+}
 @keyframes marquee {
   from {
     transform: translateX(0);
