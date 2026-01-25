@@ -21592,7 +21592,7 @@ nav .logo img {
 .bg-custom::before {
   content: "";
   position: fixed; /* O fixed se deve coprire l'intera pagina */
-  top: 0;
+  top: -100px;
   left: 0;
   width: 100%;
   height: 100vh;
