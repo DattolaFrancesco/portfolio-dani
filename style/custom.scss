@@ -107,7 +107,7 @@ nav .logo img {
 
 .bg-custom {
   position: relative;
-  min-height: 100dvh;
+  min-height: 100vh;
   overflow: hidden;
 }
 .outlined {
@@ -134,7 +134,7 @@ nav .logo img {
 }
 .size-custom {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
 }
 .opacityAnimation {
   opacity: 0;
@@ -163,7 +163,12 @@ nav .logo img {
   white-space: nowrap;
   margin-right: 2rem;
   font-size: 5rem;
-  color: black;
+  color: rgb(232, 37, 41);
+  text-shadow:
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
 }
 @keyframes marquee {
   from {
