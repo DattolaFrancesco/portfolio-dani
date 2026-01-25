@@ -21538,15 +21538,14 @@ textarea.form-control-lg {
 }
 .bg-body {
   position: relative;
-  min-height: 100vh;
+  min-height: 100lvh;
   /* Rimuoviamo l'immagine da qui */
   background: none;
 }
 
-/* Creiamo un finto sfondo che sta fermo */
 .bg-body::before {
   content: "";
-  position: fixed; /* Questo sostituisce l'attachment: fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -21555,7 +21554,6 @@ textarea.form-control-lg {
   background-image: url("../img/TEXTURE.png");
   background-position: center;
   background-size: cover;
-  /* Forza l'accelerazione hardware per eliminare i glitch */
   will-change: transform;
   transform: translateZ(0);
 }
