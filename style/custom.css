@@ -21611,7 +21611,7 @@ nav .logo img {
 
 .size-custom {
   width: 100vw;
-  height: 100svh;
+  height: 100dvh;
 }
 
 .opacityAnimation {
@@ -21645,7 +21645,6 @@ nav .logo img {
   margin-right: 2rem;
   font-size: 5rem;
   color: rgb(232, 37, 41);
-  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 
 @keyframes marquee {
