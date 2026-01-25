@@ -21545,10 +21545,7 @@ textarea.form-control-lg {
 }
 html,
 body {
-  height: 100%;
-  overflow-y: auto;
-  overscroll-behavior: contain; /* Chrome / Android */
-  -webkit-overflow-scrolling: touch; /* Safari */
+  overscroll-behavior-y: contain;
 }
 
 .bg-body {

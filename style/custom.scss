@@ -62,12 +62,8 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
 // body
 html,
 body {
-  height: 100%;
-  overflow-y: auto;
-  overscroll-behavior: contain; /* Chrome / Android */
-  -webkit-overflow-scrolling: touch; /* Safari */
+  overscroll-behavior-y: contain;
 }
-
 .bg-body {
   position: relative;
   min-height: 100%;
