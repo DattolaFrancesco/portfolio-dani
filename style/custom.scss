@@ -52,10 +52,11 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
 // normal css
 // body
 .bg-body {
-  min-height: 100dvh;
+  min-height: 100vh;
   background-image: url("..//img/TEXTURE.png");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 // nav bar
 
@@ -82,10 +83,11 @@ nav .logo img {
 }
 
 .bg-custom {
-  min-height: 100dvh;
+  min-height: 100vh;
   background-image: url("../img/Sfondo_Verticale-removebg-preview.png");
   background-position: center;
   background-size: 120% auto;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: block;
 }
