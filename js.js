@@ -7,7 +7,7 @@ document.fonts.ready.then(() => {
 });
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 10) {
+  if (scrollY > 100) {
     marquee.classList.add("opacityAnimation");
   } else marquee.classList.remove("opacityAnimation");
 });
