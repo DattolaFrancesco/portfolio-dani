@@ -62,7 +62,7 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
 // body
 .bg-body {
   position: relative;
-  min-height: 100lvh;
+  min-height: 100vh;
   /* Rimuoviamo l'immagine da qui */
   background: none;
 }
@@ -73,7 +73,7 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100lvh;
+  height: 100vh;
   z-index: -10; /* Lo manda dietro a tutto */
   background-image: url("../img/TEXTURE.png");
   background-position: center;
@@ -107,7 +107,7 @@ nav .logo img {
 
 .bg-custom {
   position: relative;
-  min-height: 100lvh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
