@@ -128,6 +128,9 @@ nav .logo img {
   width: 100vw;
   height: 100svh;
 }
+.opacityAnimation {
+  opacity: 0;
+}
 .marquee {
   position: absolute;
   bottom: 20%;
@@ -140,7 +143,7 @@ nav .logo img {
   width: max-content;
   animation: marquee 15s linear infinite;
   animation-play-state: paused;
-
+  transition: 1s ease;
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }

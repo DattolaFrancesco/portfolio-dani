@@ -5,3 +5,9 @@ document.fonts.ready.then(() => {
     marquee.classList.add("marquee-ready");
   }, 1000);
 });
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 10) {
+    marquee.classList.add("opacityAnimation");
+  } else marquee.classList.remove("opacityAnimation");
+});
