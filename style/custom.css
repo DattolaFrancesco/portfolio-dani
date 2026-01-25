@@ -21543,11 +21543,6 @@ textarea.form-control-lg {
   font-style: normal;
   font-display: swap;
 }
-html,
-body {
-  overscroll-behavior-y: contain;
-}
-
 .bg-body {
   position: relative;
   min-height: 100%;

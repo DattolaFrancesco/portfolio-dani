@@ -60,10 +60,7 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
   font-display: swap;
 }
 // body
-html,
-body {
-  overscroll-behavior-y: contain;
-}
+
 .bg-body {
   position: relative;
   min-height: 100%;
