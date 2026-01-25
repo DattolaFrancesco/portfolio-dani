@@ -7149,7 +7149,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "MyFont", system-ui, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -13065,7 +13065,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "MyFont", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -13175,7 +13175,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "MyFont", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -21536,6 +21536,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "MyFont";
+  src: url("./16460_GarrisonKayo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .bg-body {
   position: relative;
   min-height: 100lvh;
@@ -21595,4 +21602,24 @@ nav .logo img {
   background-position: center;
   background-size: 110% auto;
   background-repeat: no-repeat;
+}
+
+.marquee {
+  animation: move 15s linear infinite;
+  bottom: 5%;
+  font-family: "MyFont", sans-serif;
+  color: black;
+}
+
+.custom-fs {
+  font-size: 5rem;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=custom.css.map */

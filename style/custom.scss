@@ -4,6 +4,8 @@
 
 @import "../scss/variables";
 
+$font-family-base: "MyFont", system-ui, sans-serif;
+
 //$new-theme-colors: (// new colors);
 //$theme-colors: map-merge($theme-colors, $new-theme-colors);
 
@@ -50,6 +52,13 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
 // mod
 
 // normal css
+@font-face {
+  font-family: "MyFont";
+  src: url("./16460_GarrisonKayo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 // body
 .bg-body {
   position: relative;
@@ -114,4 +123,21 @@ nav .logo img {
   background-position: center;
   background-size: 110% auto;
   background-repeat: no-repeat;
+}
+.marquee {
+  animation: move 15s linear infinite;
+  bottom: 5%;
+  font-family: "MyFont", sans-serif;
+  color: black;
+}
+.custom-fs {
+  font-size: 5rem;
+}
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
