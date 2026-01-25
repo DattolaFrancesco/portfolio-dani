@@ -125,17 +125,27 @@ nav .logo img {
   background-repeat: no-repeat;
 }
 .marquee {
-  animation: move 15s linear infinite;
+  position: absolute;
   bottom: 5%;
-  font-family: "MyFont", sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-track h1 {
+  white-space: nowrap;
+  margin-right: 2rem;
+  font-size: 5rem;
   color: black;
 }
-.custom-fs {
-  font-size: 5rem;
-}
-@keyframes move {
+@keyframes marquee {
   from {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   to {
     transform: translateX(-50%);
