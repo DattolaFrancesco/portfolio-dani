@@ -21603,6 +21603,11 @@ nav .logo img {
   background-repeat: no-repeat;
 }
 
+.size-custom {
+  width: 80%;
+  height: 80vh;
+}
+
 .marquee {
   position: absolute;
   bottom: 20%;
