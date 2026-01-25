@@ -60,6 +60,14 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
   font-display: swap;
 }
 // body
+html,
+body {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain; /* Chrome / Android */
+  -webkit-overflow-scrolling: touch; /* Safari */
+}
+
 .bg-body {
   position: relative;
   min-height: 100%;
