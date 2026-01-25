@@ -21545,7 +21545,7 @@ textarea.form-control-lg {
 }
 .bg-body {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   /* Rimuoviamo l'immagine da qui */
   background: none;
 }
@@ -21555,8 +21555,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   z-index: -10; /* Lo manda dietro a tutto */
   background-image: url("../img/TEXTURE.png");
   background-position: center;
