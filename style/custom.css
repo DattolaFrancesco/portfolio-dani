@@ -21595,11 +21595,9 @@ nav .logo img {
 
 .custom-gameboy-size {
   top: 10%;
-  left: 8%;
+  left: 7%;
   width: 85%;
   height: 38%;
-  -o-object-fit: 80% 80%;
-     object-fit: 80% 80%;
   -o-object-position: center;
      object-position: center;
   z-index: -1;
