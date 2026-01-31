@@ -21549,6 +21549,11 @@ body {
   overflow-x: hidden;
 }
 
+button,
+a {
+  touch-action: manipulation;
+}
+
 .bg-body {
   position: relative;
   min-height: 100%;
@@ -21657,7 +21662,7 @@ nav .logo img {
   transform: scaleX(-1);
 }
 
-.custom-positionUp:hover {
+.custom-positionUp-touched {
   transform: scaleX(-1) translateY(5%);
 }
 
@@ -21688,8 +21693,7 @@ nav .logo img {
   background-color: transparent;
 }
 
-.custom-positionDown:hover,
-.custom-positionDown:active {
+.custom-positionDown-touched {
   transform: translateY(-5%);
 }
 
@@ -21702,8 +21706,7 @@ nav .logo img {
   rotate: 39deg;
 }
 
-.custom-push:hover,
-.custom-push:active {
+.custom-push-touched {
   transform: translate(8%, 2%);
 }
 

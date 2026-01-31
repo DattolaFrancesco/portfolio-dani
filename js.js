@@ -14,6 +14,7 @@ window.addEventListener("scroll", () => {
 
 const btnUp = document.querySelector("#btnUp");
 const btnDown = document.querySelector("#btnDown");
+const btnPush = document.querySelector("#btnPush");
 const blurredScreen = "./img/blur.jpg";
 const work1 = "img/queio-vol1.jpeg";
 const work2 =
@@ -58,3 +59,24 @@ btnDown.addEventListener("click", () => {
     switchPhotoDown();
   }
 });
+btnDown.addEventListener(
+  "touchstart",
+  () => {
+    btnDown.classList.add("custom-positionDown-touched");
+  },
+  { passive: true },
+);
+btnDown.addEventListener(
+  "touchend",
+  () => {
+    btnDown.classList.remove("custom-positionDown-touched");
+  },
+  { passive: true },
+);
+btnDown.addEventListener(
+  "touchcancel",
+  () => {
+    btnDown.classList.remove("custom-positionDown-touched");
+  },
+  { passive: true },
+);
