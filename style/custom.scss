@@ -176,10 +176,26 @@ nav .logo img {
   width: 17%;
   background-color: transparent;
   transform: scaleX(-1);
-  rotate: 180deg;
 }
 .custom-positionUp:active {
-  transform: scaleX(-1) translateY(-5%);
+  transform: scaleX(-1) translateY(5%);
+}
+.custom-positionSx {
+  top: 60%;
+  left: 8%;
+  height: 10%;
+  width: 17%;
+  background-color: transparent;
+  rotate: 270deg;
+}
+.custom-positionDx {
+  top: 60%;
+  left: 33%;
+  height: 10%;
+  width: 17%;
+  background-color: transparent;
+  rotate: 90deg;
+  transform: scaleX(-1);
 }
 .custom-positionDown {
   top: 67%;
@@ -190,6 +206,17 @@ nav .logo img {
 }
 .custom-positionDown:active {
   transform: translateY(-5%);
+}
+.custom-push {
+  top: 56%;
+  right: 10%;
+  height: 20%;
+  width: 22%;
+  background-color: transparent;
+  rotate: 39deg;
+}
+.custom-push:active {
+  transform: translate(8%, 2%);
 }
 @keyframes marquee {
   from {
