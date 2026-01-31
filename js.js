@@ -1,3 +1,10 @@
+document.addEventListener(
+  "touchstart",
+  (e) => {
+    e.preventDefault();
+  },
+  { passive: false },
+);
 const marquee = document.querySelector(".marquee-track");
 
 document.fonts.ready.then(() => {
