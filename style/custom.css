@@ -21598,8 +21598,10 @@ nav .logo img {
   left: 8%;
   width: 85%;
   height: 38%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: 80% 80%;
+     object-fit: 80% 80%;
+  -o-object-position: center;
+     object-position: center;
   z-index: -1;
 }
 

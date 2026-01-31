@@ -1,10 +1,3 @@
-document.addEventListener(
-  "touchstart",
-  (e) => {
-    e.preventDefault();
-  },
-  { passive: false },
-);
 const marquee = document.querySelector(".marquee-track");
 
 document.fonts.ready.then(() => {
@@ -23,7 +16,7 @@ const btnUp = document.querySelector("#btnUp");
 const btnDown = document.querySelector("#btnDown");
 const btnPush = document.querySelector("#btnPush");
 const blurredScreen = "./img/blur.jpg";
-const work1 = "img/queio-vol1.jpeg";
+const work1 = "img/Queio_1.png";
 const work2 =
   "https://plus.unsplash.com/premium_photo-1768053968250-c1ea4a302653?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8";
 const work3 =

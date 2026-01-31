@@ -116,7 +116,8 @@ nav .logo img {
   left: 8%;
   width: 85%;
   height: 38%;
-  object-fit: cover;
+  object-fit: 80% 80%;
+  object-position: center;
   z-index: -1;
 }
 
