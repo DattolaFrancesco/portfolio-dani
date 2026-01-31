@@ -21656,6 +21656,7 @@ nav .logo img {
   transform: scaleX(-1);
 }
 
+.custom-positionUp:hover,
 .custom-positionUp:active {
   transform: scaleX(-1) translateY(5%);
 }
@@ -21687,6 +21688,7 @@ nav .logo img {
   background-color: transparent;
 }
 
+.custom-positionDown:hover,
 .custom-positionDown:active {
   transform: translateY(-5%);
 }
@@ -21700,6 +21702,7 @@ nav .logo img {
   rotate: 39deg;
 }
 
+.custom-push:hover,
 .custom-push:active {
   transform: translate(8%, 2%);
 }

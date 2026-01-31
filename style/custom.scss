@@ -168,6 +168,7 @@ nav .logo img {
   background-color: transparent;
   transform: scaleX(-1);
 }
+.custom-positionUp:hover,
 .custom-positionUp:active {
   transform: scaleX(-1) translateY(5%);
 }
@@ -195,6 +196,7 @@ nav .logo img {
   width: 17%;
   background-color: transparent;
 }
+.custom-positionDown:hover,
 .custom-positionDown:active {
   transform: translateY(-5%);
 }
@@ -206,6 +208,7 @@ nav .logo img {
   background-color: transparent;
   rotate: 39deg;
 }
+.custom-push:hover,
 .custom-push:active {
   transform: translate(8%, 2%);
 }
