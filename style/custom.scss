@@ -169,8 +169,7 @@ nav .logo img {
   background-color: transparent;
   transform: scaleX(-1);
 }
-.custom-positionUp:hover,
-.custom-positionUp:active {
+.custom-positionUp:hover {
   transform: scaleX(-1) translateY(5%);
 }
 .custom-positionSx {
