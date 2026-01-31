@@ -14,8 +14,7 @@ window.addEventListener("scroll", () => {
 
 const btnUp = document.querySelector("#btnUp");
 const btnDown = document.querySelector("#btnDown");
-const blurredScreen =
-  "https://images.unsplash.com/photo-1765445773906-64a36ecfd20e?q=80&w=1669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const blurredScreen = "./img/blur.jpg";
 const work1 =
   "https://images.unsplash.com/photo-1768772123991-b17e721119a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8";
 const work2 =

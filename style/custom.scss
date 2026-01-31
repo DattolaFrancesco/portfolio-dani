@@ -101,10 +101,10 @@ nav .logo img {
 // section gameboy
 
 .custom-gameboy-size {
-  top: 7%;
-  left: 16%;
-  width: 70%;
-  height: 33%;
+  top: 10%;
+  left: 8%;
+  width: 85%;
+  height: 38%;
   object-fit: cover;
   z-index: -1;
 }
@@ -170,18 +170,26 @@ nav .logo img {
   color: rgb(232, 37, 41);
 }
 .custom-positionUp {
-  top: 56%;
-  left: 11.5%;
-  height: 7%;
-  width: 10.5%;
+  top: 54%;
+  left: 20%;
+  height: 10%;
+  width: 17%;
   background-color: transparent;
+  transform: scaleX(-1);
+  rotate: 180deg;
+}
+.custom-positionUp:active {
+  transform: scaleX(-1) translateY(-5%);
 }
 .custom-positionDown {
-  top: 68%;
-  left: 11.5%;
-  height: 7%;
-  width: 10.5%;
+  top: 67%;
+  left: 20%;
+  height: 10%;
+  width: 17%;
   background-color: transparent;
+}
+.custom-positionDown:active {
+  transform: translateY(-5%);
 }
 @keyframes marquee {
   from {
