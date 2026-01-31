@@ -21546,6 +21546,7 @@ textarea.form-control-lg {
 html,
 body {
   touch-action: manipulation;
+  overflow-x: hidden;
 }
 
 .bg-body {
@@ -21610,7 +21611,7 @@ nav .logo img {
 }
 
 .size-custom {
-  width: 100vw;
+  width: 100%;
   height: 100lvh;
 }
 
@@ -21649,9 +21650,9 @@ nav .logo img {
 
 .custom-positionUp {
   top: 54%;
-  left: 20%;
+  left: 19.3%;
   height: 10%;
-  width: 17%;
+  width: 19%;
   background-color: transparent;
   transform: scaleX(-1);
 }
