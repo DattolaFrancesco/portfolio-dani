@@ -114,15 +114,6 @@ nav .logo img {
   min-height: 100vh;
   overflow: hidden;
 }
-.outlined {
-  color: rgb(232, 37, 41);
-  text-shadow:
-    0.5px 0.5px 0 black,
-    -0.5px 0.5px 0 black,
-    0.5px -0.5px 0 black,
-    -0.5px -0.5px 0 black;
-  font-weight: bold;
-}
 .bg-custom::before {
   content: "";
   position: fixed; /* O fixed se deve coprire l'intera pagina */
