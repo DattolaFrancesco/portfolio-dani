@@ -54,6 +54,27 @@ btnUp.addEventListener("click", () => {
     switchPhotoUp();
   }
 });
+btnUp.addEventListener(
+  "touchstart",
+  () => {
+    btnUp.classList.add("custom-positionUp-touched");
+  },
+  { passive: true },
+);
+btnUp.addEventListener(
+  "touchend",
+  () => {
+    btnUp.classList.remove("custom-positionUp-touched");
+  },
+  { passive: true },
+);
+btnUp.addEventListener(
+  "touchcancel",
+  () => {
+    btnUp.classList.remove("custom-positionUp-touched");
+  },
+  { passive: true },
+);
 btnDown.addEventListener("click", () => {
   if (!pressed) {
     switchPhotoDown();
@@ -77,6 +98,27 @@ btnDown.addEventListener(
   "touchcancel",
   () => {
     btnDown.classList.remove("custom-positionDown-touched");
+  },
+  { passive: true },
+);
+btnPush.addEventListener(
+  "touchstart",
+  () => {
+    btnPush.classList.add("custom-push-touched");
+  },
+  { passive: true },
+);
+btnPush.addEventListener(
+  "touchend",
+  () => {
+    btnPush.classList.remove("custom-push-touched");
+  },
+  { passive: true },
+);
+btnPush.addEventListener(
+  "touchcancel",
+  () => {
+    btnPush.classList.remove("custom-push-touched");
   },
   { passive: true },
 );
