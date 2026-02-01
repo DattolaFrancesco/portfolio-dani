@@ -112,7 +112,7 @@ nav .logo img {
 
 .custom-gameboy-size {
   top: 8%;
-  left: 3.5%;
+  left: 3%;
   width: 93%;
   height: 40%;
   object-fit: cover;
@@ -172,42 +172,25 @@ nav .logo img {
   color: rgb(232, 37, 41);
 }
 .custom-positionUp {
-  top: 54%;
-  left: 19.3%;
-  height: 10%;
-  width: 19%;
+  top: 55%;
+  left: 21.5%;
+  height: 7%;
+  width: 13%;
   background-color: transparent;
 }
 .custom-positionUp-touched {
-  transform: translate(-2%, 2%);
-}
-.custom-positionSx {
-  top: 60%;
-  left: 8%;
-  height: 10%;
-  width: 17%;
-  background-color: transparent;
-  rotate: 270deg;
-}
-.custom-positionDx {
-  top: 60%;
-  left: 33%;
-  height: 10%;
-  width: 17%;
-  background-color: transparent;
-  rotate: 90deg;
-  transform: scaleX(-1);
+  transform: translateY(-2%);
 }
 .custom-positionDown {
-  top: 67%;
-  left: 20%;
-  height: 10%;
-  width: 17%;
+  top: 66.9%;
+  left: 21.5%;
+  height: 7.5%;
+  width: 13%;
   background-color: transparent;
 }
 
 .custom-positionDown-touched {
-  transform: translate(-2%, 2%);
+  transform: translateY(2%);
 }
 .custom-push {
   top: 56%;
