@@ -21619,7 +21619,7 @@ nav .logo img {
   height: 100vh;
   z-index: -1;
   background-image: url("../img/Verticale_Senza.png");
-  background-position: center;
+  background-position: 50% 80%;
   background-size: 110% auto;
   background-repeat: no-repeat;
 }
