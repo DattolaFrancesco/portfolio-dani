@@ -111,10 +111,11 @@ nav .logo img {
 // section gameboy
 
 .custom-gameboy-size {
-  top: 10%;
-  left: 7%;
-  width: 85%;
-  height: 38%;
+  top: 8%;
+  left: 3.5%;
+  width: 93%;
+  height: 40%;
+  object-fit: cover;
   object-position: center;
   z-index: -1;
 }
@@ -146,7 +147,7 @@ nav .logo img {
 }
 .marquee {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   width: 100%;
   overflow: hidden;
 }
