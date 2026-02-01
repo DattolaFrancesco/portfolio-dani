@@ -78,7 +78,6 @@ img {
 .bg-body {
   position: relative;
   min-height: 100%;
-  /* Rimuoviamo l'immagine da qui */
   background: none;
 }
 
@@ -88,7 +87,7 @@ img {
   top: 0;
   left: 0;
   inset: 0;
-  z-index: -10; /* Lo manda dietro a tutto */
+  z-index: -10;
   background-image: url("../img/TEXTURE.png");
   background-position: center;
   background-size: cover;
@@ -127,7 +126,7 @@ nav .logo img {
 }
 .bg-custom::before {
   content: "";
-  position: fixed; /* O fixed se deve coprire l'intera pagina */
+  position: fixed;
   top: -100px;
   left: 0;
   width: 100%;
@@ -139,7 +138,7 @@ nav .logo img {
   background-repeat: no-repeat;
 }
 .size-custom {
-  width: 100%;
+  width: 100vw;
   height: 100lvh;
 }
 .opacityAnimation {
@@ -177,10 +176,9 @@ nav .logo img {
   height: 10%;
   width: 19%;
   background-color: transparent;
-  transform: scaleX(-1);
 }
 .custom-positionUp-touched {
-  transform: scaleX(-1) translateY(5%);
+  transform: translate(-2%, 2%);
 }
 .custom-positionSx {
   top: 60%;
@@ -208,7 +206,7 @@ nav .logo img {
 }
 
 .custom-positionDown-touched {
-  transform: translateY(-5%);
+  transform: translate(-2%, 2%);
 }
 .custom-push {
   top: 56%;
