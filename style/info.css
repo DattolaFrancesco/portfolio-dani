@@ -1,0 +1,8 @@
+.info-custom-body {
+  background-image: url("../img/TEXTURE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mh-custom {
+  max-height: 30rem;
+}
