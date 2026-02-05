@@ -64,6 +64,7 @@ html,
 body {
   touch-action: manipulation;
   overflow-x: hidden;
+  font-family: Helvetica, sans-serif;
 }
 button,
 a {
@@ -169,6 +170,7 @@ nav .logo img {
   white-space: nowrap;
   margin-right: 2rem;
   font-size: 5rem;
+  font-weight: 700;
   color: rgb(232, 37, 41);
 }
 .custom-positionUp {
@@ -197,7 +199,7 @@ nav .logo img {
   height: 11%;
   width: 44%;
   background-color: transparent;
-  rotate: 324deg;
+  rotate: 328deg;
   left: 59%;
 }
 
