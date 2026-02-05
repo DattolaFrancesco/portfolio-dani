@@ -21673,11 +21673,11 @@ nav .logo img {
 }
 
 .custom-positionUp-touched {
-  transform: translateY(-2%);
+  transform: translateY(-3%);
 }
 
 .custom-positionDown {
-  top: 66.9%;
+  top: 67.2%;
   left: 21.5%;
   height: 7.5%;
   width: 13%;
@@ -21685,7 +21685,7 @@ nav .logo img {
 }
 
 .custom-positionDown-touched {
-  transform: translateY(2%);
+  transform: translateY(3%);
 }
 
 .custom-push {
