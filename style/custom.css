@@ -21708,4 +21708,8 @@ nav .logo img {
   to {
     transform: translateX(-50%);
   }
+}
+.number-custom {
+  color: inherit;
+  text-decoration: none;
 }/*# sourceMappingURL=custom.css.map */

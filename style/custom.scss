@@ -202,7 +202,6 @@ nav .logo img {
   rotate: 328deg;
   left: 60%;
 }
-
 .custom-push-touched {
   transform: translate(-2%, 1%);
 }
@@ -213,4 +212,8 @@ nav .logo img {
   to {
     transform: translateX(-50%);
   }
+}
+.number-custom {
+  color: inherit;
+  text-decoration: none;
 }
