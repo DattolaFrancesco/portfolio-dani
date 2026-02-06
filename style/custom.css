@@ -21710,6 +21710,6 @@ nav .logo img {
   }
 }
 .number-custom {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }/*# sourceMappingURL=custom.css.map */
