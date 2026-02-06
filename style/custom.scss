@@ -220,3 +220,15 @@ a.phone-link:active {
   color: #000 !important;
   text-decoration: none !important;
 }
+.display-custom-landscape {
+  display: none !important;
+}
+@media screen and (min-width: 576px) and (orientation: landscape) {
+  header,
+  main {
+    display: none;
+  }
+  .display-custom-landscape {
+    display: flex !important;
+  }
+}
