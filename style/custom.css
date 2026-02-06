@@ -21709,7 +21709,10 @@ nav .logo img {
     transform: translateX(-50%);
   }
 }
-a.phone-link {
+a.phone-link,
+a.phone-link:visited,
+a.phone-link:hover,
+a.phone-link:active {
   color: #000 !important;
   text-decoration: none !important;
 }/*# sourceMappingURL=custom.css.map */
