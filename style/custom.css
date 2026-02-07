@@ -21725,9 +21725,6 @@ a.phone-link:active {
   main {
     display: block;
   }
-  .display-custom-landscape {
-    display: none !important;
-  }
   .custom-gameboy-size {
     -o-object-fit: fill;
        object-fit: fill;
@@ -21738,9 +21735,6 @@ a.phone-link:active {
   main {
     display: block;
   }
-  .display-custom-landscape {
-    display: none !important;
-  }
   .bg-custom::before {
     content: "";
     top: 0.1%;
@@ -21750,9 +21744,6 @@ a.phone-link:active {
   header,
   main {
     display: block;
-  }
-  .display-custom-landscape {
-    display: none !important;
   }
   .marquee {
     bottom: 0;
