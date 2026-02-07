@@ -21563,6 +21563,10 @@ img {
   -webkit-touch-callout: none;
 }
 
+.animationNav {
+  animation: introNav 3s forwards;
+}
+
 .bg-body {
   position: relative;
   min-height: 100%;
@@ -21623,6 +21627,7 @@ nav .logo img {
   background-position: 50% 80%;
   background-size: 110% auto;
   background-repeat: no-repeat;
+  animation: introBg 3s forwards;
 }
 
 .size-custom {
@@ -21639,6 +21644,7 @@ nav .logo img {
   bottom: 8%;
   width: 100%;
   overflow: hidden;
+  animation: moveMarquee 3s forwards;
 }
 
 .marquee-track {
@@ -21772,7 +21778,6 @@ a.phone-link:active {
     background-image: url("../img/Orizzontale_Senza.png");
     background-position: center;
     background-size: contain;
-    animation: introBg 3s forwards;
   }
   section.flex-column {
     flex-direction: row !important;
@@ -21792,16 +21797,6 @@ a.phone-link:active {
   }
   li.mb-3 {
     margin-bottom: 0rem !important;
-  }
-  .animationNav {
-    animation: introNav 3s forwards;
-  }
-  .marquee {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-    animation: moveMarquee 3s forwards;
   }
   .moveUl {
     animation: moveUl 2s forwards;
