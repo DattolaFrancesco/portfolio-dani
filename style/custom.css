@@ -21714,6 +21714,10 @@ a.phone-link:active {
   display: none !important;
 }
 
+.gap-custom {
+  gap: 0 !important;
+}
+
 @media screen and (max-height: 500px) and (orientation: landscape) {
   header,
   main {
@@ -21759,6 +21763,9 @@ a.phone-link:active {
     top: 0%;
     background-image: url("../img/Orizzontale_Senza.png");
     background-position: center;
+  }
+  .gap-custom {
+    gap: 3rem !important;
   }
 }
 @media screen and (min-width: 992px) {
