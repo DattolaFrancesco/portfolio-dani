@@ -21884,8 +21884,10 @@ a.phone-link:active {
 @keyframes introBg {
   from {
     transform: translateY(100%);
+    opacity: 0;
   }
   to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
