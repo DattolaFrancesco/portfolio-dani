@@ -219,6 +219,12 @@ a.phone-link:active {
 .gap-custom {
   gap: 0 !important;
 }
+.moveUl {
+  animation: moveUl 2s forwards;
+}
+.moveImg {
+  animation: moveImg 2s forwards;
+}
 @media screen and (max-height: 500px) and (orientation: landscape) {
   header,
   main {
