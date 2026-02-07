@@ -21596,7 +21596,7 @@ nav .logo img {
 .custom-gameboy-size {
   top: 9%;
   left: 5%;
-  width: 88%;
+  width: 90.5%;
   height: 37%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -21646,14 +21646,9 @@ nav .logo img {
   width: -moz-max-content;
   width: max-content;
   animation: marquee 15s linear infinite;
-  animation-play-state: paused;
   transition: 1s ease;
   will-change: transform;
   transform: translate3d(0, 0, 0);
-}
-
-.marquee-ready {
-  animation-play-state: running;
 }
 
 .marquee-track h1, .marquee-track .h1 {
@@ -21701,14 +21696,6 @@ nav .logo img {
   transform: translate(-2%, 1%);
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 a.phone-link,
 a.phone-link:visited,
 a.phone-link:hover,
@@ -21721,7 +21708,7 @@ a.phone-link:active {
   display: none !important;
 }
 
-@media screen and (min-width: 576px) and (orientation: landscape) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
   header,
   main {
     display: none !important;
@@ -21731,6 +21718,190 @@ a.phone-link:active {
   }
   .display-custom-landscape {
     display: flex !important;
+  }
+}
+@media screen and (min-width: 500px) {
+  header,
+  main {
+    display: block;
+  }
+  .display-custom-landscape {
+    display: none !important;
+  }
+  .custom-gameboy-size {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media screen and (min-width: 576px) {
+  header,
+  main {
+    display: block;
+  }
+  .display-custom-landscape {
+    display: none !important;
+  }
+  .bg-custom::before {
+    content: "";
+    top: 0.1%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header,
+  main {
+    display: block;
+  }
+  .display-custom-landscape {
+    display: none !important;
+  }
+  .marquee {
+    bottom: 0;
+  }
+  .bg-custom::before {
+    content: "";
+    top: 0%;
+    background-image: url("../img/Orizzontale_Senza.png");
+    background-position: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  header,
+  main {
+    display: block;
+  }
+  .display-custom-landscape {
+    display: none !important;
+  }
+  .marquee {
+    bottom: 0;
+  }
+  .bg-custom::before {
+    content: "";
+    top: 2%;
+    background-image: url("../img/Orizzontale_Senza.png");
+    background-position: center;
+    background-size: contain;
+    animation: introBg 3s forwards;
+  }
+  section.flex-column {
+    flex-direction: row !important;
+  }
+  section.justify-content-center {
+    justify-content: space-around !important;
+    gap: 5rem;
+  }
+  .cheustom-m {
+    margin-top: 20% !important;
+  }
+  img.w-75 {
+    width: 50% !important;
+  }
+  li.fs-4 {
+    font-size: 2rem !important;
+  }
+  li.mb-3 {
+    margin-bottom: 0rem !important;
+  }
+  .animationNav {
+    animation: introNav 3s forwards;
+  }
+  .marquee {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    animation: moveMarquee 3s forwards;
+  }
+  .moveUl {
+    animation: moveUl 2s forwards;
+  }
+  .moveImg {
+    animation: moveImg 2s forwards;
+  }
+  .moveUl li {
+    cursor: pointer;
+  }
+  .moveUl li span {
+    position: relative;
+    display: inline-block;
+  }
+  .moveUl li span::before {
+    content: "";
+    background-color: red;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s ease;
+    transform: scaleX(0);
+  }
+  .moveUl li span:hover::before {
+    transform: scaleX(1);
+  }
+  .marquee-track h1, .marquee-track .h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  .custom-m {
+    margin-top: 0 !important;
+  }
+  .mh-custom {
+    margin-top: 0 !important;
+  }
+  .lastLi {
+    margin-bottom: 0 !important;
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes moveMarquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes introNav {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes introBg {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveUl {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveImg {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 .info-custom-body {
