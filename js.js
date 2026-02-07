@@ -13,7 +13,7 @@ const worksPhoto = document.querySelector("#worksPhoto");
 
 // ------------------ Preload immagini ------------------
 let loadedCount = 0;
-btnUp.disabled = true; // disabilita pulsanti finché le immagini non sono pronte
+btnUp.disabled = true;
 btnDown.disabled = true;
 
 works.forEach((src) => {
@@ -22,8 +22,7 @@ works.forEach((src) => {
   img.onload = () => {
     loadedCount++;
     if (loadedCount === works.length) {
-      // Tutte le immagini sono caricate
-      worksPhoto.src = works[0]; // mostra la prima immagine
+      worksPhoto.src = works[0];
       btnUp.disabled = false;
       btnDown.disabled = false;
     }
@@ -78,7 +77,7 @@ btnDown.addEventListener("click", () => {
   if (!pressed) switchPhotoDown();
 });
 
-// ------------------ Event touch (rimane tutto uguale) ------------------
+// ------------------ Event touch ------------------
 btnUp.addEventListener("touchstart", () => btnUp.classList.add("custom-positionUp-touched"), { passive: true });
 btnUp.addEventListener("touchend", () => btnUp.classList.remove("custom-positionUp-touched"), { passive: true });
 btnUp.addEventListener("touchcancel", () => btnUp.classList.remove("custom-positionUp-touched"), { passive: true });
