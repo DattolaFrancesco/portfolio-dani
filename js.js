@@ -1,46 +1,57 @@
 const marquee = document.querySelector(".marquee-track");
 
-document.fonts.ready.then(() => {
-  setTimeout(() => {
-    marquee.classList.add("marquee-ready");
-  }, 1000);
+const works = ["img/1_Queio.png", "img/2_Character.png", "img/3_LETTERING.png", "img/4_Vetrina.png", "img/5_Popup.png", "img/6_Misc..png"];
+
+const blurredScreen = "./img/blur.gif";
+let counter = 0;
+let pressed = false;
+
+const btnUp = document.querySelector("#btnUp");
+const btnDown = document.querySelector("#btnDown");
+const btnPush = document.querySelector("#btnPush");
+const worksPhoto = document.querySelector("#worksPhoto");
+
+// ------------------ Preload immagini ------------------
+let loadedCount = 0;
+btnUp.disabled = true; // disabilita pulsanti finché le immagini non sono pronte
+btnDown.disabled = true;
+
+works.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+  img.onload = () => {
+    loadedCount++;
+    if (loadedCount === works.length) {
+      // Tutte le immagini sono caricate
+      worksPhoto.src = works[0]; // mostra la prima immagine
+      btnUp.disabled = false;
+      btnDown.disabled = false;
+    }
+  };
+});
+
+// ------------------ Marquee ------------------
+window.addEventListener("load", () => {
+  document.fonts.ready.then(() => {
+    setTimeout(() => {
+      marquee.classList.add("marquee-ready");
+    }, 1000);
+  });
 });
 
 window.addEventListener("scroll", () => {
   if (scrollY > 100) {
     marquee.classList.add("opacityAnimation");
-  } else marquee.classList.remove("opacityAnimation");
+  } else {
+    marquee.classList.remove("opacityAnimation");
+  }
 });
 
-const btnUp = document.querySelector("#btnUp");
-const btnDown = document.querySelector("#btnDown");
-const btnPush = document.querySelector("#btnPush");
-const blurredScreen = "./img/blur.gif";
-const work1 = "img/1_Queio.png";
-const work2 = "img/2_Character.png";
-const work3 = "img/3_LETTERING.png";
-const work4 = "img/4_Vetrina.png";
-const work5 = "img/5_Popup.png";
-const work6 = "img/6_Misc..png";
-const works = [work1, work2, work3, work4, work5, work6];
-let counter = 0;
-let pressed = false;
+// ------------------ Funzioni switch foto ------------------
 const switchPhotoUp = () => {
   pressed = true;
   counter++;
-  if (counter > 5) counter = 0;
-  const worksPhoto = document.querySelector("#worksPhoto");
-  worksPhoto.src = blurredScreen;
-  setTimeout(() => {
-    worksPhoto.src = works[counter];
-    pressed = false;
-  }, 200);
-};
-const switchPhotoDown = () => {
-  pressed = true;
-  counter--;
-  if (counter < 0) counter = 5;
-  const worksPhoto = document.querySelector("#worksPhoto");
+  if (counter > works.length - 1) counter = 0;
   worksPhoto.src = blurredScreen;
   setTimeout(() => {
     worksPhoto.src = works[counter];
@@ -48,76 +59,34 @@ const switchPhotoDown = () => {
   }, 200);
 };
 
+const switchPhotoDown = () => {
+  pressed = true;
+  counter--;
+  if (counter < 0) counter = works.length - 1;
+  worksPhoto.src = blurredScreen;
+  setTimeout(() => {
+    worksPhoto.src = works[counter];
+    pressed = false;
+  }, 200);
+};
+
+// ------------------ Event listener pulsanti ------------------
 btnUp.addEventListener("click", () => {
-  if (!pressed) {
-    switchPhotoUp();
-  }
+  if (!pressed) switchPhotoUp();
 });
-btnUp.addEventListener(
-  "touchstart",
-  () => {
-    btnUp.classList.add("custom-positionUp-touched");
-  },
-  { passive: true },
-);
-btnUp.addEventListener(
-  "touchend",
-  () => {
-    btnUp.classList.remove("custom-positionUp-touched");
-  },
-  { passive: true },
-);
-btnUp.addEventListener(
-  "touchcancel",
-  () => {
-    btnUp.classList.remove("custom-positionUp-touched");
-  },
-  { passive: true },
-);
 btnDown.addEventListener("click", () => {
-  if (!pressed) {
-    switchPhotoDown();
-  }
+  if (!pressed) switchPhotoDown();
 });
-btnDown.addEventListener(
-  "touchstart",
-  () => {
-    btnDown.classList.add("custom-positionDown-touched");
-  },
-  { passive: true },
-);
-btnDown.addEventListener(
-  "touchend",
-  () => {
-    btnDown.classList.remove("custom-positionDown-touched");
-  },
-  { passive: true },
-);
-btnDown.addEventListener(
-  "touchcancel",
-  () => {
-    btnDown.classList.remove("custom-positionDown-touched");
-  },
-  { passive: true },
-);
-btnPush.addEventListener(
-  "touchstart",
-  () => {
-    btnPush.classList.add("custom-push-touched");
-  },
-  { passive: true },
-);
-btnPush.addEventListener(
-  "touchend",
-  () => {
-    btnPush.classList.remove("custom-push-touched");
-  },
-  { passive: true },
-);
-btnPush.addEventListener(
-  "touchcancel",
-  () => {
-    btnPush.classList.remove("custom-push-touched");
-  },
-  { passive: true },
-);
+
+// ------------------ Event touch (rimane tutto uguale) ------------------
+btnUp.addEventListener("touchstart", () => btnUp.classList.add("custom-positionUp-touched"), { passive: true });
+btnUp.addEventListener("touchend", () => btnUp.classList.remove("custom-positionUp-touched"), { passive: true });
+btnUp.addEventListener("touchcancel", () => btnUp.classList.remove("custom-positionUp-touched"), { passive: true });
+
+btnDown.addEventListener("touchstart", () => btnDown.classList.add("custom-positionDown-touched"), { passive: true });
+btnDown.addEventListener("touchend", () => btnDown.classList.remove("custom-positionDown-touched"), { passive: true });
+btnDown.addEventListener("touchcancel", () => btnDown.classList.remove("custom-positionDown-touched"), { passive: true });
+
+btnPush.addEventListener("touchstart", () => btnPush.classList.add("custom-push-touched"), { passive: true });
+btnPush.addEventListener("touchend", () => btnPush.classList.remove("custom-push-touched"), { passive: true });
+btnPush.addEventListener("touchcancel", () => btnPush.classList.remove("custom-push-touched"), { passive: true });
