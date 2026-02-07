@@ -3,6 +3,8 @@ const marquee = document.querySelector(".marquee-track");
 const works = ["img/1_Queio.png", "img/2_Character.png", "img/3_LETTERING.png", "img/4_Vetrina.png", "img/5_Popup.png", "img/6_Misc..png"];
 
 const blurredScreen = "./img/blur.gif";
+const blurredImg = new Image();
+blurredImg.src = blurredScreen;
 let counter = 0;
 let pressed = false;
 
