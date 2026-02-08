@@ -87,16 +87,16 @@ btnPush.addEventListener("click", () => {
       window.location.href = "./works.html#02Character";
       break;
     case 2:
-      console.log("l");
+      window.location.href = "./works.html#03Lettering";
       break;
     case 3:
-      console.log("v");
+      window.location.href = "./works.html#04Vetrina";
       break;
     case 4:
-      console.log("p");
+      window.location.href = "./works.html#05Popup";
       break;
     case 5:
-      console.log("m");
+      window.location.href = "./works.html#06Misc";
       break;
   }
 });
