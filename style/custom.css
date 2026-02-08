@@ -21941,5 +21941,9 @@ a.phone-link:active {
 
 .interval {
   background-color: red;
-  height: 100px;
+  height: 30px;
+}
+
+.custom-h-works {
+  height: 80dvh;
 }/*# sourceMappingURL=custom.css.map */
