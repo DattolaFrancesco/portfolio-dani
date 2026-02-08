@@ -78,6 +78,28 @@ btnUp.addEventListener("click", () => {
 btnDown.addEventListener("click", () => {
   if (!pressed) switchPhotoDown();
 });
+btnPush.addEventListener("click", () => {
+  switch (counter) {
+    case 0:
+      window.location.href = "./works.html#01Queio";
+      break;
+    case 1:
+      window.location.href = "./works.html#02Character";
+      break;
+    case 2:
+      console.log("l");
+      break;
+    case 3:
+      console.log("v");
+      break;
+    case 4:
+      console.log("p");
+      break;
+    case 5:
+      console.log("m");
+      break;
+  }
+});
 
 // ------------------ Event touch ------------------
 btnUp.addEventListener("touchstart", () => btnUp.classList.add("custom-positionUp-touched"), { passive: true });
