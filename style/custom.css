@@ -21937,11 +21937,7 @@ a.phone-link:active {
 
 .interval {
   background-color: transparent;
-  height: 30px;
-}
-
-.custom-h-works {
-  min-height: 80dvh;
+  height: 5px;
 }
 
 .carousel-item {
