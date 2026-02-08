@@ -437,9 +437,14 @@ a.phone-link:active {
   margin-top: 7rem;
 }
 .interval {
-  background-color: red;
+  background-color: transparent;
   height: 30px;
 }
 .custom-h-works {
-  height: 80dvh;
+  min-height: 80dvh;
+}
+.carousel-item {
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
 }

@@ -21940,10 +21940,18 @@ a.phone-link:active {
 }
 
 .interval {
-  background-color: red;
+  background-color: transparent;
   height: 30px;
 }
 
 .custom-h-works {
-  height: 80dvh;
+  min-height: 80dvh;
+}
+
+.carousel-item {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=custom.css.map */
