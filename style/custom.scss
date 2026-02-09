@@ -65,7 +65,7 @@ html,
 body {
   touch-action: manipulation;
   overflow-x: hidden;
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button,
 a {
@@ -416,6 +416,7 @@ a.phone-link:active {
   background-image: url("../img/TEXTURE.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .mh-custom {
   max-height: 30rem;
@@ -426,6 +427,7 @@ a.phone-link:active {
 }
 .fw-custom {
   font-weight: 500;
+  font-size: 1.6rem;
 }
 .vh-custom-info {
   min-height: 100dvh;
@@ -441,7 +443,13 @@ a.phone-link:active {
 }
 
 .carousel-item {
-  height: 30rem;
   object-fit: cover;
   object-position: center;
+}
+.bottom-custom {
+  bottom: 15%;
+}
+.carousel-inner {
+  width: 75%;
+  margin-inline: auto;
 }
