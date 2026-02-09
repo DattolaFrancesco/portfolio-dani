@@ -298,43 +298,31 @@
       </section>
       <!-- end first section 06 Misc -->
     </main>
+    <script>
+      window.addEventListener("load", () => {
+        const hash = window.location.hash;
+        if (!hash) return; // nessun hash → non fare nulla
+
+        const target = document.querySelector(hash);
+        if (!target) return;
+
+        // controlla se siamo arrivati con una navigazione diretta (apertura pagina o refresh)
+        const navType = performance.getEntriesByType("navigation")[0].type;
+        if (navType === "navigate" || navType === "reload") {
+          // aspetta layout stabile (carousel + immagini)
+          setTimeout(() => {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }, 600);
+        }
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Solo se il browser supporta scrollRestoration
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
-      }
-
-      window.addEventListener("load", () => {
-        const hash = window.location.hash;
-        if (!hash) return;
-
-        const target = document.querySelector(hash);
-        if (!target) return;
-
-        // Se arrivi da link esterno, forza scroll in alto
-        if (!performance.getEntriesByType("navigation")[0].type.includes("navigate")) {
-          // navigazione interna, non toccare
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-          return;
-        }
-
-        // navigazione diretta / refresh → scrolla dopo timeout
-        window.scrollTo(0, 0);
-        setTimeout(() => {
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }, 600);
-      });
-    </script>
   </body>
 </html>
