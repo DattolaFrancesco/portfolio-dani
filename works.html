@@ -304,22 +304,30 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // Solo se il browser supporta scrollRestoration
       if ("scrollRestoration" in history) {
         history.scrollRestoration = "manual";
       }
+
       window.addEventListener("load", () => {
         const hash = window.location.hash;
         if (!hash) return;
 
-        if ("scrollRestoration" in history) {
-          history.scrollRestoration = "manual";
-        }
-
         const target = document.querySelector(hash);
         if (!target) return;
 
-        window.scrollTo(0, 0);
+        // Se arrivi da link esterno, forza scroll in alto
+        if (!performance.getEntriesByType("navigation")[0].type.includes("navigate")) {
+          // navigazione interna, non toccare
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          return;
+        }
 
+        // navigazione diretta / refresh → scrolla dopo timeout
+        window.scrollTo(0, 0);
         setTimeout(() => {
           target.scrollIntoView({
             behavior: "smooth",
