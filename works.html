@@ -305,19 +305,16 @@
     ></script>
     <script>
       window.addEventListener("load", () => {
-        const hash = window.location.hash;
-        if (!hash) return;
+        const id = sessionStorage.getItem("scrollTarget");
+        if (!id) return;
 
-        const target = document.querySelector(hash);
+        const target = document.getElementById(id);
         if (!target) return;
 
-        // aspetta bootstrap + immagini + carousel
         setTimeout(() => {
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }, 2000);
+          target.scrollIntoView({ behavior: "smooth" });
+          sessionStorage.removeItem("scrollTarget");
+        }, 600);
       });
     </script>
   </body>
