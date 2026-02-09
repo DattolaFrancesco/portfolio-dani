@@ -1,5 +1,3 @@
-sessionStorage.setItem("scrollTarget", "01Queio");
-window.location.href = "./works.html";
 const marquee = document.querySelector(".marquee-track");
 
 const works = ["img/1_Queio.png", "img/2_character.png", "img/4_LETTERING.png", "img/3_Vetrina.png", "img/2_Popup.png", "img/6_Misc..png"];
