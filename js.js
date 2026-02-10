@@ -117,3 +117,20 @@ btnDown.addEventListener("touchcancel", () => btnDown.classList.remove("custom-p
 btnPush.addEventListener("touchstart", () => btnPush.classList.add("custom-push-touched"), { passive: true });
 btnPush.addEventListener("touchend", () => btnPush.classList.remove("custom-push-touched"), { passive: true });
 btnPush.addEventListener("touchcancel", () => btnPush.classList.remove("custom-push-touched"), { passive: true });
+
+// desktop display
+
+const display = document.querySelector("#worksDisplayer");
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    display.src = "./img/desktop-tv/tv.jpeg";
+    btnDown.classList.add("none");
+    btnUp.classList.add("none");
+    btnPush.classList.add("none");
+  } else {
+    display.src = "img/GAMEBOYOFFICIAL.png";
+    btnDown.classList.remove("none");
+    btnUp.classList.remove("none");
+    btnPush.classList.remove("none");
+  }
+});

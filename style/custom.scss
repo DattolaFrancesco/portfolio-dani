@@ -238,7 +238,7 @@ a.phone-link:active {
     display: flex !important;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
   header,
   main {
     display: block;
@@ -457,4 +457,7 @@ a.phone-link:active {
 .shadow-custom {
   -webkit-box-shadow: -1px 1px 23px 1px rgba(0, 0, 0, 0.76);
   box-shadow: -1px 1px 23px 1px rgba(0, 0, 0, 0.76);
+}
+.none {
+  display: none;
 }
