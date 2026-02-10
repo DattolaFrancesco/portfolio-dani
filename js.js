@@ -121,6 +121,15 @@ btnPush.addEventListener("touchcancel", () => btnPush.classList.remove("custom-p
 // desktop display
 
 const display = document.querySelector("#worksDisplayer");
+
+window.addEventListener("load", () => {
+  if (window.innerWidth > 768) {
+    display.src = "./img/desktop-tv/tv.jpeg";
+    btnDown.classList.add("none");
+    btnUp.classList.add("none");
+    btnPush.classList.add("none");
+  }
+});
 window.addEventListener("resize", () => {
   if (window.innerWidth > 768) {
     display.src = "./img/desktop-tv/tv.jpeg";
