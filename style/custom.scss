@@ -226,6 +226,9 @@ a.phone-link:active {
 .moveImg {
   animation: moveImg 2s forwards;
 }
+li {
+  transition: all 0.5s ease;
+}
 @media screen and (max-height: 500px) and (orientation: landscape) {
   header,
   main {
@@ -275,9 +278,6 @@ a.phone-link:active {
     background-image: url("../img/Orizzontale_Senza.png");
     background-position: center;
   }
-  .gap-custom {
-    gap: 3rem !important;
-  }
 }
 @media screen and (min-width: 992px) {
   header,
@@ -312,6 +312,9 @@ a.phone-link:active {
   }
   img.w-75 {
     width: 50% !important;
+  }
+  li:hover {
+    scale: (1.2);
   }
   li.fs-4 {
     font-size: 2rem !important;
@@ -362,6 +365,9 @@ a.phone-link:active {
   }
   .lastLi {
     margin-bottom: 0 !important;
+  }
+  .mh-custom {
+    max-height: 30rem;
   }
 }
 // animations
@@ -422,7 +428,7 @@ a.phone-link:active {
   background-position: center;
 }
 .mh-custom {
-  max-height: 30rem;
+  max-height: 20rem;
   margin-top: 10%;
 }
 .custom-m {
