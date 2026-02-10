@@ -8,7 +8,7 @@ const loadCarousel = () => {
 
     setTimeout(() => {
       window.location = `./works.html${hash}`;
-    }, 10);
+    }, 30);
   }
 };
 window.addEventListener("load", () => {
