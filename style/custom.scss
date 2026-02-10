@@ -290,6 +290,9 @@ a.phone-link:active {
   .marquee {
     bottom: 0;
   }
+  .marquee.d-none {
+    display: block !important;
+  }
   .bg-custom::before {
     content: "";
     top: 2%;
